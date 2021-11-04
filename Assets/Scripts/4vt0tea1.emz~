@@ -10,19 +10,19 @@ public class MainManager : MonoBehaviour
 
     public void ChangeTextRed()
     {
-        someText.text = "you clicked a red cube!";
+        someText.text = "I'm a red cube!";
         Debug.Log("Working here Red!");
     }
 
     public void ChangeTextGreen()
     {
-        someText.text = "you clicked a green sphere!";
+        someText.text = "I'm a green sphere!";
         Debug.Log("Working here Green!");
     }
 
     public void ChangeTextBlue()
     {
-        someText.text = "you clicked a blue capsule!";
+        someText.text = "I'm a blue capsule!";
         Debug.Log("Working here Blue!");
     }
 }
