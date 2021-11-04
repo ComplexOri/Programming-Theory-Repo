@@ -8,6 +8,8 @@ public class ObjectsToButtons : MonoBehaviour
 
     public UnityEvent unityEvent = new UnityEvent();
 
+
+    // inheritance
     private void Update()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
