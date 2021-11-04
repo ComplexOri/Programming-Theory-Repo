@@ -2,11 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainManager : MonoBehaviour
 {
-
+    private static int health;
     public Text someText;
+    
+    public static int Health
+    {
+    get { return health; }
+    set { health = value; health = 1; }
+    }
+
+    public static void TakeDMG ()
+    {
+        health--;
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+
+    public static void Die()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     public void ChangeTextRed()
     {

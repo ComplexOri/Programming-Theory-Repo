@@ -7,14 +7,8 @@ public class ObjectsToButtons : MonoBehaviour
 {
 
     public UnityEvent unityEvent = new UnityEvent();
-    public GameObject button;
 
-    void Start()
-    {
-        button = this.gameObject;
-    }
-
-    void Update()
+    private void Update()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
